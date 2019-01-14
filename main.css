@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+section {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+header{
+    background-color: #f9f8eb;
+}
+
+header img {
+    max-width: 50px;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .weather {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .t-line-b {
+        border-bottom: 1px solid #b9e6d3;
+    }
+
+    .t-line-r {
+        border-right: 1px solid #b9e6d3;
+    }
+
+    .o-line-b {
+        border-bottom: 1px solid #7ed3b2;
+    }
+
+    .o-line-r {
+        border-right: 1px solid #7ed3b2;
+    }
+}
+
+.yesterday-wrap {
+    background-color: #e4e3d8;
+}
+
+.yesterday-wrap h3 {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.today-wrap {
+    padding-top: 10px;
+    background-color: #e0dec7;
+}
+
+.yesterday-bgc {
+    background-color: #d8d7c8;
+}
+
+.today-bgc {
+    background-color: #e7e5cb;
+}
+
+.other-days {
+    background-color: #e0dfc5;
+    padding-bottom: 10px;
+}
+
+.other-days div>span {
+    display: block;
+}
+
+.box {
+    height: 80px;
+    line-height: 80px;
+    overflow: hidden;
+}
+
+.second-box {
+    overflow: hidden;
+    line-height: 35px;
+}
+
+footer {
+    margin: 10px 0;
+}

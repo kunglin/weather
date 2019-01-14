@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="lin">
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>天气预报</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="row">
+            <header class="col-12">
+                <img src="img/weather.png" alt="天气">
+                <h1 class="h2">佛山天气</h1>
+            </header>
+        </div>
+        <div class="weather">
+            <div class="row flex-row-reverse" id="remove">
+                <div class="col-md-8 col-12 today-bgc">
+                    <div class="row">
+                        <div class="today-wrap box col-12">
+                            <h3 class="h4">今日天气</h3>
+                            <h4 class="h5">发布时间：<time id="updateTime"></time></h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box col-6 col-md-4 font-weight-bold" id="wenduT"></div>
+                        <div class="box col-6 col-md-4" id="high0"></div>
+                        <div class="box col-6 col-md-4" id="low0"></div>
+                        <div class="box col-6 col-md-4" id="type0"></div>
+                        <div class="box col-6 col-md-4" id="sunrise0"></div>
+                        <div class="box col-6 col-md-4" id="sunset0"></div>
+                        <div class="box col-6 col-md-4" id="qualityT"></div>
+                        <div class="box col-6 col-md-4" id="aqiT"></div>
+                        <div class="box col-6 col-md-4" id="shiduT"></div>
+                        <div class="box col-6" id="ganmaoT"></div>
+                        <div class="box col-6" id="notice0"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12  yesterday-bgc">
+                    <div class="row">
+                        <div class="yesterday-wrap box col-12">
+                            <h3 class="h4">昨日天气</h3>
+                        </div>
+                    </div>
+                    <div class="row" id="yesterday">
+                        <div class="box col-6 font-weight-bold" id="highY"></div>
+                        <div class="box col-6 font-weight-bold" id="lowY"></div>
+                        <div class="box col-6" id="sunriseY"></div>
+                        <div class="box col-6" id="sunsetY"></div>
+                        <div class="box col-6" id="typeY"></div>
+                        <div class="box col-6" id="weekY"></div>
+                        <div class="box col-6" id="aqiY"></div>
+                        <div class="box col-6" id="fxY"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row today-wrap">
+                <h3 class="h4 col-12">未来天气</h3>
+            </div>
+            <div class="other-days row">
+                <div class="tomorrow col-md-3 col-6 second-box ">
+                    <div>
+                        <h4 id="week1"></h4>
+                        <span id="high1"></span>
+                        <span id="low1"></span>
+                        <span id="type1"></span>
+                        <span id="sunrise1"></span>
+                        <span id="sunset1"></span>
+                    </div>
+                </div>
+                <div class="the-day-after-tomorrow col-md-3 col-6 second-box ">
+                    <div>
+                        <h4 id="week2"></h4>
+                        <span id="high2"></span>
+                        <span id="low2"></span>
+                        <span id="type2"></span>
+                        <span id="sunrise2"></span>
+                        <span id="sunset2"></span>
+                    </div>
+                </div>
+                <div class="two-day-after-tomorrow col-md-3 col-6 second-box ">
+                    <div>
+                        <h4 id="week3"></h4>
+                        <span id="high3"></span>
+                        <span id="low3"></span>
+                        <span id="type3"></span>
+                        <span id="sunrise3"></span>
+                        <span id="sunset3"></span>
+                    </div>
+                </div>
+                <div class="three-day-after-tomorrow col-md-3 col-6 second-box ">
+                    <div>
+                        <h4 id="week4"></h4>
+                        <span id="high4"></span>
+                        <span id="low4"></span>
+                        <span id="type4"></span>
+                        <span id="sunrise4"></span>
+                        <span id="sunset4"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>by lin</footer>
+    </section>
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
